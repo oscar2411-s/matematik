@@ -1,0 +1,104 @@
+* {
+  font-family: "Work Sans";
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10vh;
+}
+.overskrift {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.container .underskrift {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+.streg {
+  height: 3px;
+  width: 400px;
+  background-color: black;
+}
+.kategori-container {
+  margin-top: 3vh;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.kategori {
+  width: 400px;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.3);
+  margin: 22px;
+  padding: 30px;
+  border-radius: 4px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+.kategori:hover {
+  box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.kategori h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.kategori p {
+  margin-top: 1vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  .kategori-container {
+    width: 90%;
+  }
+  .kategori {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  background-color: black;
+  color: white;
+}
+.privacy {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: opacity 0.3s;
+}
+.privacy:hover {
+  opacity: 0.8;
+}
+.copy {
+  font-weight: 300;
+  color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0.2;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 25px;
+}
